@@ -1,0 +1,138 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: '스티키 - 상단바 메모 고정 앱',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Google Play 다운로드',
+        href: 'https://play.google.com/store/apps/details?id=com.sungs.notisticky', // 나중에 실제 Google Play 링크로 바꾸세요!
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+      { text: '주요 기능', href: '#features' },
+    ]}
+    image={{ src: '~/assets/images/327shots_so.png', alt: '상단바에 메모가 고정된 스티키 앱 실행 화면' }}
+  >
+    <Fragment slot="title">
+      내 일상을 바꿔줄 최고의 앱 <br />
+      <span class="text-accent dark:text-white">스티키</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      메모를 간편하게 관리하는 최고의 앱, 스티키로 일상을 더 편리하게 만들어보세요!<br/>
+      메모를 상단바에 고정하고 언제든 확인하세요
+    </Fragment>
+  </Hero>
+
+  <!-- Note Widget ******************* -->
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    tagline="Key Features"
+    title="스티키가 제공하는 핵심 기능"
+    subtitle="복잡한 메모 앱은 이제 그만. <br> 잊으면 안 되는 중요한 메모를 가장 빠르고 확실하게 관리하세요."
+    items={[
+      {
+        title: '📌 상단바(알림창) 메모 고정',
+        description:
+          '어떤 앱을 사용 중이든 상단바만 내리면 메모를 바로 확인할 수 있습니다. 폰을 켤 때마다 눈에 띄어 절대 잊어버리지 않습니다.',
+        icon: 'tabler:pin',
+      },
+      {
+        title: '⚡ 퀵타일로 1초 만에 작성',
+        description:
+          '상단바 빠른 설정(퀵타일)에 추가해 두세요. 홈 화면에서 앱 아이콘을 찾을 필요 없이 언제 어디서나 즉시 새 메모를 작성할 수 있습니다.',
+        icon: 'tabler:bolt',
+      },
+      {
+        title: '✔️ 앱 실행 없는 간편한 해제',
+        description:
+          '완료한 할 일은 알림창에서 바로 \'고정 해제\' 버튼을 눌러 지우세요. 번거롭게 앱에 다시 들어갈 필요가 없습니다.',
+        icon: 'tabler:square-check',
+      },
+      {
+        title: '💾 자동 저장 및 재부팅 유지',
+        description:
+          '작성 후 뒤로 가기만 누르면 자동 저장됩니다. 스마트폰을 껐다 켜도 고정해 둔 메모는 사라지지 않고 안전하게 유지됩니다.',
+        icon: 'tabler:device-floppy',
+      },
+      {
+        title: '✨ 미니멀하고 직관적인 디자인',
+        description:
+          '군더더기 없는 깔끔한 UI로 메모 작성과 관리에만 오롯이 집중할 수 있습니다. 가볍고 매우 빠르게 작동합니다.',
+        icon: 'tabler:feather',
+      },
+      {
+        title: '💡 이런 분들께 강력 추천!',
+        description:
+          '할 일을 자주 깜빡하시거나, 복잡한 앱 대신 상단바에서 모든 것을 간단하게 해결하고 싶은 분들을 위해 만들었습니다.',
+        icon: 'tabler:thumb-up',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+
+  <!-- Content Widget **************** -->
+
+  
+
+  <!-- Content Widget **************** -->
+
+
+
+  <!-- Steps Widget ****************** -->
+
+
+
+  <!-- Features2 Widget ************** -->
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  
+  <!-- FAQs Widget ******************* -->
+
+
+
+  <!-- Stats Widget ****************** -->
+
+  <!-- CallToAction Widget *********** -->
+
+<CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Google Play에서 다운로드',
+        href: 'https://play.google.com/store/apps/details?id=com.sungs.notisticky', /* 나중에 여기에 실제 구글 플레이스토어 링크를 넣으시면 됩니다! */
+        target: '_blank',
+        icon: 'tabler:download',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      지금 바로 <span class="text-accent dark:text-white sm:whitespace-nowrap">스티키</span>를 시작하세요
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      더 이상 중요한 할 일을 깜빡하지 마세요.<br class="hidden md:inline" />
+      상단바 메모 고정 앱, 스티키와 함께 스마트한 일상을 경험해 보세요.
+    </Fragment>
+  </CallToAction>
+</Layout>
