@@ -1,10 +1,10 @@
 site:
   name: 스티키
-  site: 'https://astrowind.vercel.app'
+  site: 'https://sticky-landing.vercel.app/'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: KmwZH2K8WJvF0EZb61TBXcTZzCY5TerUGRjeTLOvA8I
 
 # Default SEO metadata
 metadata:
